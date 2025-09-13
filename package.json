@@ -1,6 +1,6 @@
 {
     "name": "showcase",
-    "version": "0.1.00",
+    "version": "0.1.2",
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
