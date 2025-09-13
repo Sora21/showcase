@@ -1,0 +1,51 @@
+{
+    "name": "showcase",
+    "version": "0.1.00",
+    "scripts": {
+        "ng": "ng",
+        "start": "ng serve",
+        "start-prod": "ng serve -c production",
+        "build": "ng build",
+        "watch": "ng build --watch --configuration development",
+        "test": "ng test"
+    },
+    "private": true,
+    "dependencies": {
+        "@angular/animations": "^20.0.3",
+        "@angular/common": "^20.0.3",
+        "@angular/compiler": "^20.0.3",
+        "@angular/core": "^20.0.3",
+        "@angular/forms": "^20.0.3",
+        "@angular/platform-browser": "^20.0.3",
+        "@angular/platform-browser-dynamic": "^20.0.3",
+        "@angular/router": "^20.0.3",
+        "@fortawesome/angular-fontawesome": "^2.00.0",
+        "@fortawesome/fontawesome-svg-core": "^6.4.2",
+        "@fortawesome/free-brands-svg-icons": "^6.4.2",
+        "@fortawesome/free-solid-svg-icons": "^6.4.2",
+        "@ng-bootstrap/ng-bootstrap": "19.0.0-rc.0",
+        "@popperjs/core": "^2.11.8",
+        "animate.css": "^4.1.1",
+        "aos": "^2.3.4",
+        "bootstrap": "^5.3.6",
+        "photoswipe": "^5.4.4",
+        "rxjs": "~7.8.0",
+        "tslib": "^2.3.0"
+    },
+    "devDependencies": {
+        "@angular/build": "^20.0.2",
+        "@angular/cli": "^20.0.2",
+        "@angular/compiler-cli": "^20.0.3",
+        "@angular/localize": "^20.0.3",
+        "@types/aos": "^3.0.7",
+        "@types/bootstrap": "^5.2.10",
+        "@types/jasmine": "~5.1.0",
+        "jasmine-core": "~5.1.0",
+        "karma": "~6.4.0",
+        "karma-chrome-launcher": "~3.2.0",
+        "karma-coverage": "~2.2.0",
+        "karma-jasmine": "~5.1.0",
+        "karma-jasmine-html-reporter": "~2.1.0",
+        "typescript": "~5.8.3"
+    }
+}

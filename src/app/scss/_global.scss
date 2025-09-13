@@ -1,0 +1,215 @@
+// Global theme styling
+
+// Scroll padding for all scroll targets on page used with
+// native CSS smooth scrolling
+// 
+// https://caniuse.com/?search=scroll-padding
+
+html {
+    scroll-padding-top: 4.5rem;
+}
+
+body {
+    height: 150vh;
+    position: relative;
+    // Disabled for now due to incompatibility with ScrollSpy in Bootstrap 5.2.x
+    // overflow-x: hidden;
+}
+
+app-root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+// Adjust the line height of paragraphs
+p {
+    line-height: $line-height-lg;
+}
+
+// Spacing and heading styling for page sections
+.page-section {
+    // padding: 6rem 0;
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+
+    h2.section-heading {
+        font-size: 2.5rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    h3.section-subheading {
+        font-size: 1rem;
+        font-weight: 400;
+        font-style: italic;
+        font-family: $subheadings-font-family;
+        margin-bottom: 4rem;
+    }
+}
+
+.bg-image-subtle {
+    @extend .rounded;
+    // background: $primary-bg-subtle;
+    // background: rgba($blue-200, 0.9);
+    background: rgba($yellow-700, 0.5);
+}
+
+a>img:hover {
+    @extend .shadow-lg;
+    transition: box-shadow 0.1s ease-in-out;
+}
+
+// Spacing
+.pe-25 {
+    padding-right: 25%;
+}
+
+
+
+.mesh-mesher {
+    background-color: hsla(0, 0%, 100%, 0);
+    background-image:
+        radial-gradient(at 7% 60%, hsla(143, 100%, 52%, 1) 0px, transparent 50%),
+        radial-gradient(at 9% 22%, hsla(78, 100%, 64%, 1) 0px, transparent 50%);
+}
+
+
+.mesh-colorffy {
+    --_gradient-blend-mode: normal;
+    --_gradient-blur: 40px;
+
+    background: radial-gradient(at 22.857142857142858% 31.717980295566502%, #B7D474 0px, transparent 50%),
+        radial-gradient(at 21.80952380952381% 72.50615763546799%, #5FAD7F 0px, transparent 50%) #00000000;
+    ;
+    mix-blend-mode: var(--_gradient-blend-mode);
+
+
+    .frosted-backdrop {
+        backdrop-filter: blur(var(--_gradient-blur)) contrast(100%) brightness(100%);
+        -webkit-backdrop-filter: blur(var(--_gradient-blur)) contrast(100%) brightness(100%);
+    }
+}
+
+
+
+
+@keyframes hero-gradient-animation {
+    0% {
+        --c-0: hsla(78.12500000000001, 52%, 64%, 1);
+        --x-0: 20%;
+        --y-0: 20%;
+        --s-start-0: 0%;
+        --s-end-0: 50%;
+        --c-1: hsla(144.6153846153846, 32%, 52%, 1);
+        --x-1: 20%;
+        --y-1: 67%;
+        --s-start-1: 0%;
+        --s-end-1: 50%;
+    }
+
+    100% {
+        --c-0: hsla(78.12500000000001, 52%, 64%, 1);
+        --x-0: 39%;
+        --y-0: 32%;
+        --s-start-0: 7;
+        --s-end-0: 74;
+        --c-1: hsla(78.12500000000001, 52%, 64%, 1);
+        --x-1: 27%;
+        --y-1: 78%;
+        --s-start-1: 7;
+        --s-end-1: 74;
+    }
+}
+
+@keyframes hero-gradient-animation {
+    0% {
+        --c-1: hsla(144.6153846153846, 32%, 52%, 1);
+        --x-1: 20%;
+        --y-1: 67%;
+        --s-start-1: 0%;
+        --s-end-1: 50%;
+    }
+
+    100% {
+        --c-1: hsla(78.12500000000001, 52%, 64%, 1);
+        --x-1: 27%;
+        --y-1: 78%;
+        --s-start-1: 7;
+        --s-end-1: 74;
+    }
+}
+
+@property --c-0 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsla(78.12500000000001, 52%, 64%, 1)
+}
+
+@property --x-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 20%
+}
+
+@property --y-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 20%
+}
+
+@property --s-start-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 0%
+}
+
+@property --s-end-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 50%
+}
+
+@property --c-1 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsla(144.6153846153846, 32%, 52%, 1)
+}
+
+@property --x-1 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 20%
+}
+
+@property --y-1 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 67%
+}
+
+@property --s-start-1 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 0%
+}
+
+@property --s-end-1 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 50%
+}
+
+.mesh-mshr {
+    --c-0: hsla(78.12500000000001, 52%, 64%, 1);
+    --x-0: 20%;
+    --y-0: 20%;
+    --c-1: hsla(144.6153846153846, 32%, 52%, 1);
+    --x-1: 20%;
+    --y-1: 67%;
+    ;
+    background-color: hsla(0, 100%, 50%, 0);
+    background-image: radial-gradient(circle at var(--x-0) var(--y-0), var(--c-0) var(--s-start-0), transparent var(--s-end-0)), radial-gradient(circle at var(--x-1) var(--y-1), var(--c-1) var(--s-start-1), transparent var(--s-end-1));
+    animation: hero-gradient-animation 10s linear infinite alternate;
+    background-blend-mode: normal, normal;
+}

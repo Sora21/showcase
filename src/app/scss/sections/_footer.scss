@@ -1,0 +1,24 @@
+//
+// Footer section styling
+//
+
+.footer {
+    @extend .rounded-top;
+
+    text-align: center;
+    font-size: 0.9rem;
+    // font-family: $headings-font-family;
+
+    box-shadow: 0 .25rem 1rem 0 rgba(0, 0, 0, .1);
+
+    background-color: rgba($blue-800, 0.9);
+
+    .img-footer-logo {
+        height: 6.5rem;
+        pointer-events: none
+
+        // @include media-breakpoint-up(md) {
+        //     height: 5.5rem;
+        // }
+    }
+}

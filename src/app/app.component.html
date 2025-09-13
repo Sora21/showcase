@@ -1,0 +1,21 @@
+<!-- Header -->
+<w-header></w-header>
+
+<!-- Background image -->
+<header class="masthead">
+    <div class="container">
+        <div
+            class="masthead-subheading animate__animated animate__fadeInLeft {{isSubHeadingVisible ? '' : 'invisible'}}">
+            {{subHeading}}
+        </div>
+        <div class="masthead-heading animate__animated animate__fadeInRight" style="animation-delay: .5s;">
+            {{heading}}
+        </div>
+    </div>
+</header>
+
+<!-- Page Navigation -->
+<router-outlet></router-outlet>
+
+<!-- Footer -->
+<w-footer class="shadow-sm mt-auto"></w-footer>

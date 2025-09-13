@@ -1,0 +1,13 @@
+{
+    "editor.detectIndentation": false,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "files.insertFinalNewline": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "search.exclude": {
+        "**/*.code-search": true,
+        "**/bower_components": true,
+        "**/docs*/**": true,
+        "**/node_modules": true
+    }
+}

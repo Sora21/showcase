@@ -1,0 +1,22 @@
+// Styles
+
+// Import variables
+@import "./app/scss/typography.scss";
+
+// Import Local Bootstrap
+@import "./app/scss/bootstrap/bootstrap.scss";
+
+// Global CSS
+@import "./app/scss/global.scss";
+
+// Components
+@import "./app/scss/components/buttons.scss";
+@import "./app/scss/components/navbar.scss";
+
+// Sections
+@import "./app/scss/sections/masthead.scss";
+@import "./app/scss/sections/team.scss";
+@import "./app/scss/sections/footer.scss";
+
+// Pages
+@import "./app/scss/pages/home.scss";
